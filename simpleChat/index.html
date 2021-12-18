@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          margin: 0 auto;
+          max-width: 800px;
+          padding: 0 20px;
+        }
+        
+        .darker {
+          border-color: #ccc;
+          background-color: #ddd;
+        }
+        
+        .container::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        
+        .container img.right {
+          float: right;
+          margin-left: 20px;
+          margin-right:0;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <h1 align="center">Chat</h1>
+    <div id="messages"></div><br><br><br>
+
+    <div style="position: fixed;bottom: 0; width: 100%;">
+    <input style="width: 200px; height: 40px;border-radius: 10px; border-color: green; font-size: 20px;" type="text" id="ism" placeholder="Name" required>
+    <input style="width: 400px; height: 40px;border-radius: 10px; border-color: green; font-size: 16px;" type="text" id="sms" placeholder="Message">
+    <button style="width: 100px;margin-left: 10px;color: blue; position: fixed; bottom: 0; height: 45px;border-radius: 10px; border-color: green; font-size: 25px;" type="button" onclick="Send()">Send</button>
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
